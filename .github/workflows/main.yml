@@ -20,15 +20,15 @@ jobs:
       
     - name: requirements
       run: |
-        pip3 install -r requirements.txt  
+        pip3 install -r requests
     
     - name: os
       run: |
-        pip3 install -r os.txt
+        pip3 install -r os
       
     - name: datetime
       run: |
-        pip3 install -r datetime.txt
+        pip3 install -r datetime
         
     - name: Checkin
       run: |
