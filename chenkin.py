@@ -11,7 +11,7 @@ def start():
     sckey = 'SCT8420Tj8Jsg1kXgply7DHe5JxOVzzA'
     url = 'https://ehallplatform.xust.edu.cn/default/jkdk/mobile/com.primeton.eos.jkdk.xkdjkdkbiz.jt.biz.ext'
     ua = 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Mobile Safari/537.36'
-    cookie = 'JSESSIONID=8F21293DE037536ECE74136BA95102AC'
+    cookie = 'JSESSIONID=0806C1E3FD59615A594BE72728C21A51; JSESSIONID=7FFAA9AD5F0093316B95DB8EF0CF0B36'
     ori = 'http://ehallmobile.xust.edu.cn'
     re = 'https://ehallplatform.xust.edu.cn/default/jkdk/mobile/mobJkdkAdd_test.jsp?uid=RkE2QjI1N0VBNzZBQjgxMTNFODNFRTE0Q0EwMzMwNUY='
     cn = 'keep-alive'
@@ -29,4 +29,3 @@ def main_handler(event, context):
 
 if __name__ == '__main__':
   start()
-  
