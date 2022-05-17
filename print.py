@@ -1,0 +1,2 @@
+NAME = input()
+print(NAME)
