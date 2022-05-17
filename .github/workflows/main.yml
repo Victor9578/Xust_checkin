@@ -21,5 +21,6 @@ jobs:
     - name: Checkin
       env:
         NAME: ${{ secrets.NAME }}
+        COOKIE: ${{ secrets.COOKIE }}
       run: |
-        python xust_checkin.py 
+        python xust_checkin.py&python lj.py
