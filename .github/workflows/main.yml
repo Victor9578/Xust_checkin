@@ -22,4 +22,4 @@ jobs:
       env:
         NAME: ${{ secrets.NAME }}
       run: |
-        python print.py 
+        python xust_checkin.py 
