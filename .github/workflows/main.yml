@@ -22,4 +22,4 @@ jobs:
         
     - name: Checkin
       run: |
-        python3 xust_checkin.py 
+        python xust_checkin.py 
