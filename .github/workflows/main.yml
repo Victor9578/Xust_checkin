@@ -4,7 +4,11 @@ on:
   push:
     branches: [ main ]
   schedule:
+<<<<<<< HEAD
     - cron:  '10 13 * * *'
+=======
+    - cron:   13 6 * * * 
+>>>>>>> a08a82738fea02ceb67b8af4d8a29ef87b4b2875
 
 jobs:
   build:
