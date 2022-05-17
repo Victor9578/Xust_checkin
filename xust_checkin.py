@@ -51,7 +51,7 @@ def ck(data,payload,msggg):
     t=requests.post(urlsend,data=msgg)
 
 def main():
-    NAME = os.environ['NAME']
+    NAME = os.environ['NAME'].split(" ")
     ntt = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     nt = datetime.datetime.now().strftime('%Y-%m-%d')
     nt1 = (datetime.datetime.now()+datetime.timedelta(days=1)).strftime('%Y-%m-%d')
