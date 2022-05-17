@@ -19,7 +19,7 @@ jobs:
         sudo apt install python3
         
     - name: Checkin
-      env:
-        name: ${{ secrets.NAME }}
+      with:
+        NAME: ${{ secrets.NAME }}
       run: |
         python xust_checkin.py 
