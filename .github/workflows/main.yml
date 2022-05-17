@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Install Python
       run: |
@@ -20,6 +20,6 @@ jobs:
         
     - name: Checkin
       env:
-        NAME:${{ secrets.NAME }}
+        name: ${{ secrets.NAME }}
       run: |
         python xust_checkin.py 
