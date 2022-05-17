@@ -50,7 +50,7 @@ def ck(data,payload,msggg):
     print(msgg)
     t=requests.post(urlsend,data=msgg)
 
-def main_handler(event, context):
+def main():
     
     ntt = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     nt = datetime.datetime.now().strftime('%Y-%m-%d')
@@ -79,3 +79,4 @@ def main_handler(event, context):
         print(payload)
         ck(data,payload,msggg)
 
+main()
