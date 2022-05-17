@@ -76,7 +76,7 @@ def main():
         payloadd['xkdjkdk']['xm'] = NAME[i]
         msggg = xx[i][3]
         payload = payloadd
-        print(payload)
+        # print(payload)
         ck(data,payload,msggg)
 
 main()
