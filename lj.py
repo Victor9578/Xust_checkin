@@ -30,7 +30,7 @@ def main():
     raa= ra.text
     rb = re.findall(r'(?<="access_token":").*(?=",)',raa)
     urlsend = "https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token="+rb[0]
-    msg = {"touser":"WuXiLong","agentid":"1000002","msgtype":"textcard","textcard":{"title" :"lj_checkin","description" : event["Message"]+'\n'+r.text+'\n'+lj_msgg,"url" : " "}}
+    msg = {"touser":"WuXiLong","agentid":"1000002","msgtype":"textcard","textcard":{"title" :"lj_checkin","description" : r.text+'\n'+lj_msgg,"url" : " "}}
     msgg = json.dumps(msg)
     print(msgg)
     requests.post(urlsend,data=msgg)
